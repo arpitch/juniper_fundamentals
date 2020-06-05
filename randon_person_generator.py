@@ -17,8 +17,12 @@ random_phone_number3 = 0
 
 #randon phone format : 123-444-5575
 for x in range(100):
-    random_name = '{} {}'.format(choice(first_names), choice(last_names))
-    email = '{}.{}{}'.format(choice(first_names).lower(), choice(last_names).lower(), choice(email_services))
+    #random_name = '{} {}'.format(choice(first_names), choice(last_names))
+    first = choice(first_names)
+    second = choice(first_names)
+    email = choice(email_services)
+    random_name = '{} {}'.format(first, second)
+    email = '{}.{}{}'.format(first.lower(), second.lower(), choice(email_services))
     print('------------------------------------------')
     print(random_name)
     print(email)
