@@ -31,3 +31,11 @@ for x in range(100):
     random_phone_number3 = random.randint(1001, 9999)
     print('{}-{}-{}'.format(random_phone_number1, random_phone_number2, random_phone_number3))
     print('------------------------------------------')
+    
+    #phone_number = '{}{}{}-{}{}{}-{}{}{}{}'.format(choice(string.digits),
+                                                   choice(string.digits),
+                                                   choice(string.digits),choice(string.digits),
+                                                   choice(string.digits),
+                                                   choice(string.digits),choice(string.digits),
+                                                   choice(string.digits),
+                                                   choice(string.digits), choice(string.digits))
