@@ -29,7 +29,7 @@ print('here are the key/value pairs ')
 for key, value in shop_cart.items():
     print('item :',key, "=>", 'quantity :',value[0] ,'price :',value[1] )
     if (value[1]) <= 10:
-        sale[key] = value
+         sale.update({key:value})
 
 print('here are the sale items less than $10 ')
 for key, value in sale.items():
